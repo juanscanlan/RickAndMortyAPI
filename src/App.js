@@ -14,7 +14,7 @@ function App() {
         <Route path="/:characterId" exact>
           <CharacterDetails />
         </Route>
-        <Route path="/search/:searchId" exact>
+        <Route path="/search/:searchTerm" exact>
           <Search />
         </Route>
       </Switch>
