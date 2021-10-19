@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+:root {
+  --color-primary: #d4c4f9;
+  --color-primary-light: #fff7ff;
+  --color-primary-dark: #a294c6;
+
+  --color-background-grey: #f7f7f7;
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --shadow-dark: 0 2rem 6rem rgba($color: #000000, $alpha: 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  transition: all 0.2s linear;
+
+  // outline: 1px solid black;
+  // outline-offset: -1px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  //font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+
+  background: url(./assets/images/seamless/rosegray.jpg);
+
+  // background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), transparent),
+  //   url(./assets/images/seamless/rosegray.jpg);
+  background-size: 15rem;
+  background-repeat: repeat;
+}

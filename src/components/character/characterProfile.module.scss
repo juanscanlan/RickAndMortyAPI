@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 1rem;
+
+  &__image {
+    border-radius: 1.5rem;
+    width: 15rem;
+    border: 1px solid gray;
+    box-shadow: 0 0 0.2rem black;
+  }
+
+  &__name {
+    text-align: center;
+    font-size: 2rem;
+    font-family: adultswim, sans-serif;
+    font-weight: 400;
+    color: #161743;
+    width: 15rem;
+    overflow: auto;
+  }
+}

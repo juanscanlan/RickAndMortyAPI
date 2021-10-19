@@ -1,0 +1,50 @@
+.container {
+  //border: 0.2rem solid var(--color-grey-dark-1);
+  //   box-shadow: 0 0 4rem 0.5rem #333;
+  //   box-shadow: 0 0 4rem 0.5rem var(--color-grey-dark-1);
+
+  width: 80rem;
+  max-width: 90%;
+  //min-width: 5rem;
+  min-height: 50rem;
+  margin: 4rem auto;
+
+  &__name {
+    font-size: 5rem;
+
+    margin: 2rem;
+    border-bottom: 1px solid black;
+  }
+}
+
+.card {
+  display: flex;
+  gap: 1.5rem;
+
+  margin: 2rem;
+
+  &__image {
+    width: 30rem;
+    border-radius: 1rem;
+  }
+
+  &__info {
+    display: block;
+    flex-direction: column;
+
+    width: 100%;
+    border-radius: 1rem;
+    overflow: auto;
+
+    background-color: #fff;
+
+    li {
+      font-size: 1.5rem;
+      list-style-type: none;
+
+      padding: 1.2rem;
+
+      border: 1px solid #e0e0e0;
+    }
+  }
+}
