@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import CharacterProfile from "../../components/character/CharacterProfile";
 import Pagination from "../../components/UI/pagination/Pagination";
+import Header from "./Header";
 
 const RICK_AND_MORTY_API_URL = "https://rickandmortyapi.com/api/character";
 
@@ -46,6 +47,7 @@ const Search = () => {
 
   return (
     <div>
+      <Header />
       <Pagination
         data={{ handlePreviousPage, handleNextPage, handlePage }}
         pageCount={info?.pages}

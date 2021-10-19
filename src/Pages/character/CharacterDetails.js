@@ -1,7 +1,7 @@
 import styles from "./characterDetails.module.scss";
 
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const RICK_AND_MORTY_API_URL = "https://rickandmortyapi.com/api/character";
 
@@ -34,9 +34,14 @@ const CharacterDetails = () => {
     fetchCharacter(`${RICK_AND_MORTY_API_URL}/${characterId}`);
   }, []);
 
-  console.log(location?.name);
+  const episodesList = episode?.map((episode) => episode.split("episode/")[1]);
+  const episodesString = episodesList?.join(", ");
+
   return (
     <div key={id} className={styles.container}>
+      <h3 className={styles.container__return}>
+        <Link to="/">Back to Home</Link>
+      </h3>
       <h2 className={styles.container__name}>{name}</h2>
       <div className={styles.card}>
         <img
@@ -66,10 +71,14 @@ const CharacterDetails = () => {
             <strong>Location: </strong>
             {location?.name}
           </li>
+          <li>
+            <strong>
+              {episodesString?.length > 1 ? "Episodes" : "Episode"}:{" "}
+            </strong>
+            {episodesString}
+          </li>
         </ul>
       </div>
-
-      {/* <span>{episode}</span> */}
     </div>
   );
 };

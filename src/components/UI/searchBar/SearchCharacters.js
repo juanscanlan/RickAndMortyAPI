@@ -1,3 +1,5 @@
+import styles from "./searchCharacters.module.scss";
+
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
@@ -18,7 +20,7 @@ const SearchCharacters = () => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <input
         type="text"
         name="characterSearchInput"

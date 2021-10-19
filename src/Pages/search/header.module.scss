@@ -1,0 +1,22 @@
+.container {
+  //   display: flex;
+  //   justify-content: center;
+  text-align: center;
+
+  margin: 4rem;
+
+  &__title {
+    font-size: 3rem;
+  }
+
+  &__search {
+    font-style: italic;
+    color: #1a0dab;
+  }
+
+  &__return {
+    text-align: center;
+    color: #161743;
+    font-size: 2rem;
+  }
+}
