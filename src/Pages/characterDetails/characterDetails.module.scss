@@ -24,6 +24,7 @@
 
 .card {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
   align-items: flex-start;
 
@@ -38,7 +39,7 @@
     display: block;
     flex-direction: column;
 
-    width: 100%;
+    width: 44.5rem;
     border-radius: 1rem;
     overflow: auto;
 

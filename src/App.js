@@ -2,8 +2,9 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Navbar from "./components/UI/Navbar/Navbar";
 import RickandMorty from "./Pages/index/RickAndMorty";
-import CharacterDetails from "./Pages/character/CharacterDetails";
+import CharacterDetails from "./Pages/characterDetails/CharacterDetails";
 import Search from "./Pages/search/Search";
+import Footer from "./components/UI/footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Search />
         </Route>
       </Switch>
+      <Footer />
     </BrowserRouter>
   );
 }

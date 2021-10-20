@@ -3,6 +3,8 @@ import styles from "./characterDetails.module.scss";
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
+import SearchCharacters from "../../components/UI/searchBar/SearchCharacters";
+
 const RICK_AND_MORTY_API_URL = "https://rickandmortyapi.com/api/character";
 
 const CharacterDetails = () => {
@@ -37,7 +39,7 @@ const CharacterDetails = () => {
   const episodesList = episode?.map((episode) => episode.split("episode/")[1]);
   const episodesString = episodesList?.join(", ");
 
-  return (
+  const characterProfileJSX = (
     <div key={id} className={styles.container}>
       <h3 className={styles.container__return}>
         <Link to="/">Back to Home</Link>
@@ -79,6 +81,13 @@ const CharacterDetails = () => {
           </li>
         </ul>
       </div>
+    </div>
+  );
+
+  return (
+    <div>
+      <SearchCharacters />
+      {characterProfileJSX}
     </div>
   );
 };
