@@ -2,7 +2,7 @@
 
 This project was developed in React.js
 
-## Getting Started
+## Installing dependencies
 
 In the project directory, you can run:
 
@@ -18,8 +18,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-
-## Page Previews: (Click to enlarge)
+## Page Previews: (Ctrl/Cmd + Click to open in new tab)
 ### Home Page
 <a href="https://raw.githubusercontent.com/juanscanlan/RickAndMortyAPI/main/src/assets/images/pages/index.png" target="_blank"><img src="src/assets/images/pages/index.png" height=200px></a>
 
