@@ -8,7 +8,11 @@ const Characters = ({ fetchData }) => {
   const { info, results } = charactersData;
 
   useEffect(() => {
-    fetchData("character").then((data) => setCharactersData(data));
+    fetchData("character")
+      .then((data) => setCharactersData(data))
+      .catch((error) => {
+        console.log(error);
+      });
   }, []);
 
   const handlePageChange = (page) => {
