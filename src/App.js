@@ -1,26 +1,33 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import Navbar from "./components/UI/Navbar/Navbar";
-import RickandMorty from "./Pages/index/RickAndMorty";
-import CharacterDetails from "./Pages/characterDetails/CharacterDetails";
-import Search from "./Pages/search/Search";
-import Footer from "./components/UI/footer/Footer";
-import Error from "./Pages/error/Error";
+import Index from "./Pages/Index/Index";
+import CharacterDetails from "./Pages/CharacterDetails/CharacterDetails";
+import Search from "./Pages/Search/Search";
+import Footer from "./components/UI/Footer/Footer";
+import Error from "./Pages/Error/Error";
+
+import fetchData from "./Helpers/fetchData";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Switch>
-        <Route path="/" component={RickandMorty} exact />
+        <Route path="/" exact>
+          <Index fetchData={fetchData} />
+        </Route>
         <Route path="/:characterId" exact>
-          <CharacterDetails />
+          <CharacterDetails fetchData={fetchData} />
         </Route>
         <Route path="/search/:searchTerm" exact>
-          <Search />
+          <Search fetchData={fetchData} />
         </Route>
         <Route path="/error/:errorCode" exact>
           <Error />
+        </Route>
+        <Route path="*">
+          <Redirect to="/error/404" />
         </Route>
       </Switch>
       <Footer />

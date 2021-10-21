@@ -7,7 +7,7 @@ const Header = () => {
   const { searchTerm } = useParams();
   const searchTerms = searchTerm.split("&");
 
-  const termsJSX = searchTerms.map((term, index) => (
+  const searchTermsJSX = searchTerms.map((term, index) => (
     <div key={index}>
       <span className={styles.left}>{term.split("=")[0]}: </span>
       <span className={styles.right}>{term.split("=")[1]}</span>
@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.container__title}>Showing results for: </h1>
-      <div className={styles.container__search}>{termsJSX}</div>
+      <div className={styles.container__search}>{searchTermsJSX}</div>
       <h3 className={styles.container__return}>
         <Link to="/">Back to Home</Link>
       </h3>

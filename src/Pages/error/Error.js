@@ -1,36 +1,21 @@
 import styles from "./error.module.scss";
 
 import errorImage from "../../assets/images/error/404.jpg";
-import { useParams } from "react-router";
 import { Link } from "react-router-dom";
-import SearchCharacters from "../../components/UI/searchBar/SearchCharacters";
+import SearchBar from "../../components/UI/SearchBar/SearchBar";
 
 const Error = () => {
-  const { errorCode } = useParams();
-
-  const errorJSX = (
-    <h1 className={styles.container__code}>
-      {errorCode === "404" && errorCode}
-      {errorCode === "500" && errorCode}
-    </h1>
-  );
-
-  const messageJSX = (
-    <span className={styles.container__message}>
-      {errorCode === "404" && "It seems that character does not exist"}
-      {errorCode === "500" && "API Server Error"}
-    </span>
-  );
-
   return (
     <div className={styles.page}>
-      <SearchCharacters />
+      <SearchBar />
       <div className={styles.container}>
         <h3 className={styles.container__return}>
           <Link to="/">Back to Home</Link>
         </h3>
-        {errorJSX}
-        {messageJSX}
+        <h1 className={styles.container__code}>404</h1>
+        <span className={styles.container__message}>
+          It seems that page does not exist
+        </span>
         <img
           className={styles.container__image}
           src={errorImage}

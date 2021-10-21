@@ -1,16 +1,13 @@
 import styles from "./pagination.module.scss";
 import { useState } from "react";
 
-const Pagination = (props) => {
-  const { handlePage } = props.data;
-  const pageCount = props.pageCount;
-
+const Pagination = ({ handlePageChange, pageCount }) => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const onClickHandler = (event) => {
     let pageNumberClicked = event.target.value;
 
-    handlePage(pageNumberClicked);
+    handlePageChange(pageNumberClicked);
     setCurrentPage(pageNumberClicked);
   };
 

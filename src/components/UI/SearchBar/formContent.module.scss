@@ -2,10 +2,12 @@
   &__options {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1.5rem;
 
-    margin-top: 2rem;
+    margin: 2rem;
   }
+
   &__search {
     display: flex;
     justify-content: center;
@@ -47,5 +49,15 @@
       border-top-right-radius: 0.4rem;
       border-bottom-right-radius: 0.4rem;
     }
+  }
+}
+
+.optionsBox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &__optionsTag {
+    font-size: 2rem;
   }
 }
