@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+
+  margin: 2rem 0;
+
+  li {
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+
+    background-color: #fff;
+
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    color: #428bca;
+
+    border: 1px solid #ddd;
+    margin-left: -1px;
+  }
+}
+
+.active {
+  background-color: gainsboro !important;
+}

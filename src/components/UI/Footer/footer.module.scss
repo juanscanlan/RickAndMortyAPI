@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 5rem;
+  padding: 0 10%;
+  background-color: #f6f6f6;
+
+  span {
+    font-size: 1.5rem;
+  }
+}
+
+.logo {
+  height: 4rem;
+}
