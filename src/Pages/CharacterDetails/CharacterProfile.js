@@ -19,9 +19,6 @@ const CharacterProfile = ({ characterData }) => {
 
   return (
     <div key={id}>
-      {/* <h3 className={styles.container__return} onClick={history.goBack}>
-        Back
-      </h3> */}
       <h2 className={styles.container__name}>{name}</h2>
       <div className={styles.card}>
         <img
