@@ -9,9 +9,21 @@
   min-height: 50rem;
   margin: 4rem auto;
 
+  &__home {
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+    color: #161743;
+
+    cursor: pointer;
+  }
+
   &__return {
     margin: 2rem;
     font-size: 2rem;
+    color: rgb(85, 26, 139); //#161743;
+
+    cursor: pointer;
   }
 
   &__name {
@@ -43,7 +55,7 @@
     border-radius: 1rem;
     overflow: auto;
 
-    background-color: #fff;
+    border: 1px solid #e0e0e0;
 
     li {
       font-size: 1.5rem;

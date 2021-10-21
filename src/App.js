@@ -5,6 +5,7 @@ import RickandMorty from "./Pages/index/RickAndMorty";
 import CharacterDetails from "./Pages/characterDetails/CharacterDetails";
 import Search from "./Pages/search/Search";
 import Footer from "./components/UI/footer/Footer";
+import Error from "./Pages/error/Error";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         </Route>
         <Route path="/search/:searchTerm" exact>
           <Search />
+        </Route>
+        <Route path="/error/:errorCode" exact>
+          <Error />
         </Route>
       </Switch>
       <Footer />

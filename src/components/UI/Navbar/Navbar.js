@@ -1,6 +1,6 @@
 import styles from "./navbar.module.scss";
 
-import Logo from "../../../assets/images/rickAndMortyLogo.svg";
+import Logo from "../../../assets/images/navbar/rickAndMortyLogo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <Link
         to={{
-          pathname: "https://rickandmortyapi.com/",
+          pathname: "https://rickandmortyapi.com/documentation",
         }}
         target="_blank"
       >

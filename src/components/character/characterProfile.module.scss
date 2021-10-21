@@ -16,6 +16,11 @@
     width: 15rem;
     border: 1px solid gray;
     box-shadow: 0 0 0.2rem black;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-0.5rem) scale(1.03);
+    }
   }
 
   &__name {

@@ -10,13 +10,29 @@
   }
 
   &__search {
-    font-style: italic;
-    color: #1a0dab;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    // flex-direction: column;
+    // align-items: center;
+    // text-align: left;
+    font-size: 1.2rem;
   }
 
   &__return {
     text-align: center;
     color: #161743;
     font-size: 2rem;
+
+    margin-top: 1.5rem;
   }
+}
+
+.left {
+  font-weight: 700;
+}
+
+.right {
+  font-style: italic;
+  color: #1a0dab;
 }

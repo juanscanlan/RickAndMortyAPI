@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import styles from "./footer.module.scss";
 
-import FaceLeft from "../../../assets/images/rickFaceLeft.jpg";
-import FaceRight from "../../../assets/images/rickFaceRight.jpg";
+import FaceLeft from "../../../assets/images/footer/rickFaceLeft.jpg";
+import FaceRight from "../../../assets/images/footer/rickFaceRight.jpg";
 
 const Footer = () => {
   return (

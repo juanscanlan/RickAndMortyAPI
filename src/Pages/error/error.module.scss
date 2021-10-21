@@ -1,0 +1,27 @@
+.page {
+  min-height: 100vh;
+  margin-top: 5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  //margin-bottom: 30vh;
+
+  //height: 100vh;
+
+  &__code {
+    font-size: 3rem;
+  }
+
+  &__message {
+    font-size: 2rem;
+  }
+
+  &__image {
+    height: 20rem;
+  }
+}
