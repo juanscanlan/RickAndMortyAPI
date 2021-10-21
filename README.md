@@ -2,7 +2,7 @@
 
 This project was developed in React.js
 
-## Available Scripts
+## Getting Started
 
 In the project directory, you can run:
 
