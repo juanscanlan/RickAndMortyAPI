@@ -14,10 +14,12 @@ const Search = ({ fetchData }) => {
   const { info, results, error } = searchData;
 
   useEffect(() => {
+    // Fetch data for given search term
     fetchData(`character/?${searchTerm}`).then((data) => setSearchData(data));
   }, [searchTerm]);
 
   const handlePageChange = (page) => {
+    // Fetch data for given search term at a specific page
     fetchData(`character/?page=${page}&${searchTerm}`).then((data) =>
       setSearchData(data)
     );

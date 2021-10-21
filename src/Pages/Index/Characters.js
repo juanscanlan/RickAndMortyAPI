@@ -8,6 +8,7 @@ const Characters = ({ fetchData }) => {
   const { info, results } = charactersData;
 
   useEffect(() => {
+    // Fetch character data
     fetchData("character")
       .then((data) => setCharactersData(data))
       .catch((error) => {
@@ -16,6 +17,7 @@ const Characters = ({ fetchData }) => {
   }, []);
 
   const handlePageChange = (page) => {
+    // Fetch character data at selected page number
     fetchData(`character/?page=${page}`).then((data) =>
       setCharactersData(data)
     );

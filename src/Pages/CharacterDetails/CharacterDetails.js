@@ -13,6 +13,7 @@ const CharacterDetails = ({ fetchData }) => {
   const [characterData, setCharacterData] = useState({});
 
   useEffect(() => {
+    // Fetch character data for a given character id
     fetchData(`character/${characterId}`)
       .then((data) => setCharacterData(data))
       .catch((error) => {

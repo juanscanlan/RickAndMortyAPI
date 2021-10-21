@@ -5,8 +5,11 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const { searchTerm } = useParams();
+
+  // Split url query into words, eg. name=Rick&status=alive&gender=male => name=Rick, status=alive, gender=male
   const searchTerms = searchTerm.split("&");
 
+  // For each query term, split at the '=' and display as text. eg. name=Rick => name: Rick
   const searchTermsJSX = searchTerms.map((term, index) => (
     <div key={index}>
       <span className={styles.left}>{term.split("=")[0]}: </span>
