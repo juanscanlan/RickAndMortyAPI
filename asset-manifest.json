@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/RickAndMortyAPI/static/css/main.c399d8c5.chunk.css",
+    "main.js": "/RickAndMortyAPI/static/js/main.4a7527dc.chunk.js",
+    "main.js.map": "/RickAndMortyAPI/static/js/main.4a7527dc.chunk.js.map",
+    "runtime-main.js": "/RickAndMortyAPI/static/js/runtime-main.e7348a1e.js",
+    "runtime-main.js.map": "/RickAndMortyAPI/static/js/runtime-main.e7348a1e.js.map",
+    "static/js/2.b4e55401.chunk.js": "/RickAndMortyAPI/static/js/2.b4e55401.chunk.js",
+    "static/js/2.b4e55401.chunk.js.map": "/RickAndMortyAPI/static/js/2.b4e55401.chunk.js.map",
+    "index.html": "/RickAndMortyAPI/index.html",
+    "static/css/main.c399d8c5.chunk.css.map": "/RickAndMortyAPI/static/css/main.c399d8c5.chunk.css.map",
+    "static/js/2.b4e55401.chunk.js.LICENSE.txt": "/RickAndMortyAPI/static/js/2.b4e55401.chunk.js.LICENSE.txt",
+    "static/media/404.d77475a5.jpg": "/RickAndMortyAPI/static/media/404.d77475a5.jpg",
+    "static/media/rickAndMortyLogo.6d98cb2f.svg": "/RickAndMortyAPI/static/media/rickAndMortyLogo.6d98cb2f.svg",
+    "static/media/rickFaceLeft.14ff0c1f.jpg": "/RickAndMortyAPI/static/media/rickFaceLeft.14ff0c1f.jpg",
+    "static/media/rickFaceRight.37fd4d01.jpg": "/RickAndMortyAPI/static/media/rickFaceRight.37fd4d01.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e7348a1e.js",
+    "static/js/2.b4e55401.chunk.js",
+    "static/css/main.c399d8c5.chunk.css",
+    "static/js/main.4a7527dc.chunk.js"
+  ]
+}
