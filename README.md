@@ -2,6 +2,8 @@
 
 # <img src="src/assets/images/footer/rickFaceRight.jpg" height="20px"> Rick and Morty API <img src="src/assets/images/footer/rickFaceLeft.jpg" height="20px">
 
+
+🖥️ Live site: https://juanscanlan.github.io/RickAndMortyAPI/#/
 This project was developed in React.js
 
 ## Installing dependencies
